@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticole Melhor Aluno do Dom Lúcio Raps</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <style>
+        /* Cabeçalho */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .login-container {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        
+        .g-signin2 {
+            margin-left: 10px;
+        }
+
+        /* Seção de banner */
+        .banner {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Galeria de vídeos populares */
+        .videos-populares {
+            margin: 20px;
+        }
+
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .video-item {
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 200px;
+        }
+
+        .video-title {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .video-stats {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Ticole Melhor Aluno do Dom Lúcio Raps</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Vídeos</a></li>
+                <li><a href="#">Artistas</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Loja</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Pesquisar vídeos...">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="login-container">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        </div>
+    </header>
+
+    <!-- Banner de Destaque -->
+    <section class="banner">
+        <h2>Shinjuku Sukuna Vs Feiticeiros</h2>
+        <iframe src="https://www.youtube.com/embed/USfFY2ACnm4?si=CTD9PEWrRg94uZCY" 
+                title="Shinjuku Sukuna Vs Feiticeiros" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+    </section>
+
+    <!-- Seção de vídeos populares -->
+    <section class="videos-populares">
+        <h2>Vídeos Populares</h2>
+        <div class="video-gallery">
+            <!-- Primeiro vídeo -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/zFT0B8-5gU8?si=WMWItsfSKlT-HLLf" 
+                        title="Okarun(Dandadan)" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <h4 class="video-title">Okarun(Dandadan)</h4>
+                <p class="video-stats">800K Visualizações | 5K Likes</p>
+            </div>
+
+            <!-- Segundo vídeo -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/ouuaEALaaGg?si=lUMJXL9EsHt5v43i" 
+                        title="Batman Que Ri" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <h4 class="video-title">Batman Que Ri</h4>
+                <p class="video-stats">2M Visualizações | 50K Likes</p>
+            </div>
+
+            <!-- Terceiro vídeo -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/MWff93oddc0?si=L-Yj0rrBhPSulItW" 
+                        title="Barba Negra(One Piece)" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <h4 class="video-title">Barba Negra(One Piece)</h4>
+                <p class="video-stats">1M Visualizações | 30K Likes</p>
+            </div>
+
+            <!-- Quarto vídeo -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/AEc65sIJMeo?si=KKvxWOWUfzFpNExk" 
+                        title="Por que estou vivo" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <h4 class="video-title">Por que estou vivo</h4>
+                <p class="video-stats">500K Visualizações | 10K Likes</p>
+            </div>
+
+            <!-- Quinto vídeo -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/rmi-YfE0b3U?si=bews-0Ygi7oeFA06" 
+                        title="desabafo 8" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <h4 class="video-title">Desabafo 8</h4>
+                <p class="video-stats">600K Visualizações | 12K Likes</p>
+            </div>
+
+            <!-- Sexto vídeo -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/LT8C5kYwcpA?si=TyZfHzt467mu7gBo" 
+                        title="Vídeo Novo 3" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <h4 class="video-title">Taka Vivendo o Passado</h4>
+                <p class="video-stats">700K Visualizações | 15K Likes</p>
+            </div>
+
+            <!-- Sétimo vídeo -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/j111AX4URR8?si=kieSmLJl1HaEzwEi" 
+                        title="Vídeo Novo 4" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                <h4 class="video-title">Desabafo Satoro Gojo</h4>
+                <p class="video-stats">800K Visualizações | 20K Likes</p>
+            </div>
+
+            <!-- Vídeos adicionais -->
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/tbuOWXj6cUk?si=mybtjSsS-HiwQK8f" 
+                        title="Tudo que eu passei" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                        <h4 class="video-title">Tudo que eu passei</h4>
+            </div>
+
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/-fmQowOCSkc?si=_TTEmY760PqDPN2l" 
+                        title="Vídeo Adicional 2" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                        <h4 class="video-title">All blue Sanji</h4>
+            </div>
+
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/OgXC6-r_C3Q?si=9QaZf1VQWiDGWejT" 
+                        title="Vídeo Adicional 3" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                        <h4 class="video-title">Rap do Sanji</h4>
+            </div>
+
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/4vFyd_QlzEk?si=XXg4_4MEvFVc1sw9" 
+                        title="Vídeo Adicional 4" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                        <h4 class="video-title">Itoshi Sae</h4>
+            </div>
+
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/tNh1nfgXvRg?si=2bOqcQTyR0YBSPV8" 
+                        title="Vídeo Adicional 5" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                        <h4 class="video-title">Desabafo Boruto</h4>
+            </div>
+
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/4UGzn9o2u_A?si=3lZGsA-l7z1OOdgG" 
+                        title="Vídeo Adicional 6" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                        <h4 class="video-title">Billy Bruto the boys</h4>
+            </div>
+
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/cUM9x3e12iw?si=t_e6324U4HnffzE-" 
+                        title="Vídeo Adicional 7" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                        <h4 class="video-title">SpeedRap-Chigiri</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Ticole Melhor Aluno do Dom Lúcio Raps. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Configuração do Client ID
+        var CLIENT_ID = 'YOUR_CLIENT_ID.apps.googleusercontent.com';
+
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); 
+            console.log('Nome: ' + profile.getName());
+            console.log('Email: ' + profile.getEmail());
+            alert('Bem-vindo, ' + profile.getName() + '!');
+        }
+
+        function init() {
+            gapi.load('auth2', function() {
+                gapi.auth2.init({ client_id: CLIENT_ID });
+            });
+        }
+        
+        window.onload = init;
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* Estilos gerais */
+body {
+    background-color: #121212; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3f0071; /* Roxo */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff0080; /* Cor rosa ao passar o mouse */
+}
+
+/* Barra de pesquisa */
+.search-container {
+    position: relative;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #ff0080; /* Cor do foco */
+}
+
+.search-container input::placeholder {
+    color: #bbb;
+}
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.search-button i {
+    pointer-events: none;
+}
+
+.search-button:hover {
+    color: #ff0080;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #1c1c1c;
+    margin-bottom: 30px;
+}
+
+.banner h2 {
+    font-size: 2rem;
+    color: #ff0080; /* Cor rosa */
+    margin-bottom: 20px;
+}
+
+.banner iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Seção de vídeos populares */
+.videos-populares {
+    padding: 40px 10px;
+    background-color: #212121;
+}
+
+.videos-populares h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
